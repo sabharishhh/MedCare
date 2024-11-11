@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MedCare</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <div class="header">
+      <h1>MedCare</h1>
+      <div class="buttons">
+        <!-- Removed Request Appointment Button -->
+        <button onclick="login()">Login</button>
+      </div>
+    </div>
+
+    <!-- Navbar with Location Dropdown -->
+    <div class="navbar">
+      <a href="#">Home</a>
+      <a href="/AboutUs/about_us.html">About Us</a>
+      <a href="#">Departments</a>
+      <a href="/ContactUs/contact_us.html">Contact Us</a>
+      <a href="/Login/admin/loginAdmin.html" target="_blank">Admin</a>
+
+      <select id="locations" onchange="setLocation()">
+        <option value="" disabled selected>Select Location</option>
+        <option value="https://maps.google.com/?q=Kollam">Kollam</option>
+        <option value="https://maps.google.com/?q=Kottayam">Kottayam</option>
+        <option value="https://maps.google.com/?q=Pallakad">Pallakad</option>
+        <option value="https://maps.google.com/?q=Thrissur">Thrissur</option>
+      </select>
+    </div>
+
+    <!-- Image Placeholder Section -->
+    <div class="image-placeholder">
+      <img src="/ResourcesI/Main/image1.jpg" alt="Medcare" width="1250"/>
+    </div>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+      <div class="stat-card">
+        <h3>125+</h3>
+        <p>Doctors</p>
+      </div>
+      <div class="stat-card">
+        <h3>38+</h3>
+        <p>Departments</p>
+      </div>
+      <div class="stat-card">
+        <h3>420+</h3>
+        <p>Hospital beds</p>
+      </div>
+      <div class="stat-card">
+        <h3>24/7</h3>
+        <p>Service</p>
+      </div>
+    </section>
+
+    <!-- Locate Us Button -->
+    <button class="locate-us-btn" onclick="locateUs()">Locate Us</button>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>&copy; 2024 Medcare. All rights reserved.</p>
+    </footer>
+
+    <script type="module" src="homePage.js" defer></script>
+  </body>
+</html>

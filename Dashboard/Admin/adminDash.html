@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+
+    <link rel="stylesheet" href="adminDash.css" type="text/css"/>
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+      <h1 class="main-title">Admin Dashboard</h1>
+
+    <div class="add-doctor">
+      <h2 class="add-doctor-title sub-title">Add Doctor</h2>
+      <form onsubmit="addDoctor(event)">
+        <label for="doctorName">Doctor Name:</label>
+        <input type="text" id="doctorName" required />
+
+        <label for="doctorEmail">Email:</label>
+        <input type="email" id="doctorEmail" required />
+
+        <label for="doctorPassword">Password:</label>
+        <input type="password" id="doctorPassword" required />
+
+        <label for="doctorDepartment">Department:</label>
+        <select id="doctorDepartment" required>
+          <option value="Cardiology">Cardiology</option>
+          <option value="Neurology">Neurology</option>
+          <option value="Oncology">Oncology</option>
+          <option value="Orthopedics">Orthopedics</option>
+          <option value="Pediatrics">Pediatrics</option>
+        </select>
+
+        <label for="doctorUniqueId">Unique ID:</label>
+        <input type="text" id="doctorUniqueId" required />
+
+        <label for="doctorPosition">Position:</label>
+        <input type="text" id="doctorPosition" required />
+
+        <button type="submit" class="add-doctor-button">Add Doctor</button>
+      </form>
+    </div>
+
+    <div class="view-doctors">
+      <h2>View Doctors</h2>
+      <label class="view-doctors-label" for="viewDepartment">Select Department :</label>
+      <select id="viewDepartment" onchange="displayDoctors()">
+        <option value="Cardiology">Cardiology</option>
+        <option value="Neurology">Neurology</option>
+        <option value="Oncology">Oncology</option>
+        <option value="Orthopedics">Orthopedics</option>
+        <option value="Pediatrics">Pediatrics</option>
+      </select>
+
+      <ul id="doctorsList"></ul>
+    </div>
+
+    <div class="view-users">
+      <h2 class="view-users-title">View Patients</h2>
+      <button class="view-users-button" onclick="displayUsers()">Display Users</button>
+      <ul id="usersList"></ul>
+    </div>
+
+        <div class="logout">
+        <a href="/Login/login.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+    </div>
+
+    <script type="module" src="adminDash.js" defer></script>
+  </body>
+</html>

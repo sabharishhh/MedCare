@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="patientDash.css" type="text/css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+  <body>
+    <div class="title">
+      <h1 class="main-title">Dashboard</h1>
+    </div>
+
+   <div class="container-main">
+     <div class="user-details">
+      <h2>Your Profile</h2>
+      <div id="user-info">
+        <p>Name : <span id="user-name"><strong>Loading...</strong></span></p><br>
+        <p>Age : <span id="user-name"><strong>Loading...</strong></span></p><br>
+        <p>Gender : <span id="user-sex"><strong>Loading...</strong></span></p><br>
+        <p>Email : <span id="user-email"><strong>Loading...</strong></span></p><br>
+        <p>Phone : <span id="user-phone"><strong>Loading...</strong></span></p><br>
+      </div>
+    </div>
+
+    <!-- Form to book appointment -->
+    <form id="appointmentForm" onsubmit="bookAppointment(event)">
+      <h2 class="sub-title">Book Your Appointment</h2>
+      <label for="doctorDepartment">Select Department:</label>
+      <select id="doctorDepartment" required onchange="loadDoctors()">
+        <option value="">Select Department</option>
+        <option value="Cardiology">Cardiology</option>
+        <option value="Neurology">Neurology</option>
+        <option value="Orthopedics">Orthopedics</option></select
+      ><br />
+
+      <label for="doctorSelect">Select Doctor :</label>
+      <select id="doctorSelect" required>
+        <option value="">Select a Doctor</option></select
+      ><br />
+
+      <label for="appointmentDate">Date :</label>
+      <input type="date" id="appointmentDate" required /><br />
+
+      <label for="appointmentTime">Time :</label>
+      <input type="time" id="appointmentTime" required /><br />
+
+      <label for="reason">Reason :</label>
+      <textarea id="reason" required></textarea><br />
+
+      <button type="submit">Book Appointment</button>
+    </form>
+   </div>
+
+    <hr /><br>
+
+    <div class="sub1">
+      <h2 class="sub1-title">Your Appointments</h2>
+    </div>
+    <div id="appointmentsContainer">
+      <!-- Appointments will be dynamically loaded here -->
+    </div>
+
+    <div class="logout">
+        <a href="/Login/login.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+    </div>
+
+    <script src="patientDash.js" type="module" defer></script>
+  </body>
+</html>

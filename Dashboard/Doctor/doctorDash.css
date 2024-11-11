@@ -1,0 +1,272 @@
+/* doctorDash.css */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f4f7f6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main-title {
+  font-size: 3.6rem;
+  color: #f4f7f6;
+  background-color: #1d3557;
+  height: 6rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+h2 {
+  color: #1d3557;
+  background-color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  min-width: 42rem;
+  max-width: 42rem;
+  text-align: center;
+}
+
+.form-title {
+  background-color: #1d3557;
+  min-width: 40rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.sub-title {
+  color: #ffffff;
+  font-size: 1.8rem;
+}
+
+form,
+.appointments-section {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 0 0 1rem 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  min-width: 40rem;
+  margin-bottom: 4rem;
+  text-align: left;
+}
+
+.schedule-save {
+  display: block;
+  margin: 1rem auto;
+  font-size: 1.4rem;
+  font-weight: 600;
+  border-radius: 1.6rem;
+  margin-top: 2rem;
+  width: 30%;
+}
+
+form h3,
+.appointments-section h3 {
+  color: #333;
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #1d3557;
+  padding-bottom: 5px;
+  text-align: center;
+}
+
+form label {
+  font-size: 1.3rem;
+  color: #555;
+  margin-top: 1rem;
+  display: block;
+  text-align: left;
+}
+
+form input[type="text"] {
+  padding: 10px;
+  margin: 5px 0;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+  background-color: #f4f7f6;
+}
+
+input:focus {
+  border-color: #1d3557;
+  outline: none;
+}
+
+button {
+  padding: 0.4rem;
+  background-color: #1d3557;
+  color: white;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #457b9d;
+  transition: background-color 0.3s;
+}
+
+.ur-appointments {
+  background-color: #1d3557;
+  color: #f4f7f6;
+  min-width: 60rem;
+  margin-bottom: 0.2rem;
+  padding: 1rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  text-align: center;
+}
+
+.ur-appointments-title {
+  font-size: 1.9rem;
+}
+
+ul#appointmentsList {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul#appointmentsList li {
+  background-color: #ffffff;
+  margin-bottom: 10px;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-bottom-right-radius: 0.6rem;
+  border-bottom-left-radius: 0.6rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.4rem;
+  min-width: 60rem;
+  margin-bottom: 2rem;
+}
+
+ul#appointmentsList li span {
+  font-size: 1rem;
+  color: #333;
+}
+
+ul#appointmentsList li button {
+  background-color: #e74c3c;
+  color: white;
+  font-size: 1.4rem;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  width: 30%;
+  margin: 2rem auto;
+}
+
+ul#appointmentsList li button:hover {
+  background-color: #c0392b;
+}
+
+/* Custom Scrollbar */
+body::-webkit-scrollbar {
+  width: 10px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #f4f7f6;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #457b9d;
+  border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background-color: #1d3557;
+}
+
+.logout {
+    height: 5rem;
+    width: 5rem;
+    border: 1px solid #333;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: fixed;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #f7f9fb;
+    transition: all 0.3s ease-in;
+}
+
+.logout:hover {
+    background-color: #1d3557;
+    color: #dcdfe1;
+    transition: all 0.3s ease-in;
+}
+
+.logout i {
+    font-size: 3rem;
+     animation: colorPulse 1.5s infinite;
+}
+
+@keyframes colorPulse {
+    0% {
+        color: #f7f9fb;
+    }
+    50% {
+        color: #e74c3c;
+    }
+    100% {
+        color: #f7f9fb;
+    }
+}
+
+/* Responsive Styling */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  form,
+  .appointments-section {
+    padding: 15px;
+  }
+
+  form input[type="text"],
+  form button,
+  ul#appointmentsList li button {
+    font-size: 0.9rem;
+  }
+
+  .main-title {
+    font-size: 2rem;
+  }
+}

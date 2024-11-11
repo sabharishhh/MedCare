@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login</title>
+    <link rel="stylesheet" href="loginAdminStyle.css" type="text/css">
+</head>
+<body>
+    <main>
+        <div class="left">
+            <h1 class="main-title">Med Care</h1>
+            <section class="admin-section">
+                <h2>Admin Login</h2>
+                <form onsubmit="adminLogin(event)">
+                    <label for="adminPassword">Admin Password:</label>
+                    <input type="password" id="adminPassword" required>
+                    <button type="submit">Admin Login</button>
+                </form>
+            </section>
+        </div>
+
+        <div class="right">
+            <img src="/Resources/image1.jpg" alt="">
+        </div>
+    </main>
+
+    <script type="module" src="firebaseAdminLogin.js" defer></script>
+</body>
+</html>

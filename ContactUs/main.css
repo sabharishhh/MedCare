@@ -1,0 +1,186 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500;700&display=swap");
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f7f6 ;
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
+header {
+  background-color: #1d3557; /* Teal shade */
+  color: #f4f7f6;
+  max-width: 1200px; /* Restrict width for white space on sides */
+  padding: 5px 475px; /* Add padding for additional space */
+  margin: 0 auto; /* Center the header */
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+}
+
+header h1 {
+  font-size: 2.75rem;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #202124; /* Darker teal shade */
+  margin-bottom: 15px;
+}
+
+/* Contact Info Boxes */
+.contact-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.info-box {
+  border: 2px solid #b7bfc3c1;
+  padding: 20px;
+  border-radius: 8px;
+  flex: 1;
+  margin-right: 10px; /* Right margin for spacing */
+}
+
+.info-box:last-child {
+  margin-right: 0; /* No margin on the last box */
+}
+
+/* Contact Form */
+.contact-form {
+  background-color: #f5f7fa;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #1d3557;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.contact-form button {
+  background-color: #1d3557 ;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.contact-form button:hover {
+  background-color: #1d3557; /* Darker shade for hover effect */
+}
+
+/* FAQs Section */
+.faq {
+  margin-top: 20px; /* Add some spacing above the FAQ section */
+}
+
+.faq-item {
+  background-color: #f4f7f6 ;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 6, 128, 0.1);
+  margin-bottom: 15px;
+}
+
+.faq-item h3 {
+  cursor: pointer;
+  color: #1d3557;
+  margin-bottom: 10px; /* Space between question and answer */
+}
+
+.faq-item p {
+  display: none; /* Hide answers by default */
+  margin-top: 10px;
+  color: #333;
+}
+
+/* Popup background overlay */
+.popup {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it's on top */
+}
+
+/* Popup content box */
+.popup-content {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.popup-content p {
+  margin-bottom: 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.popup-content button {
+  padding: 10px 20px;
+  background-color: #1d3557;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.popup-content button:hover {
+  background-color: #123456; /* Slightly darker shade on hover */
+}
+
+
+/* Footer */
+footer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d3557;
+  color: white;
+  font-size: 12px;
+  height: 24px;
+}

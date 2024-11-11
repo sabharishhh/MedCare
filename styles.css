@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%; /* Ensure the page takes up full height */
+}
+
+/* Body styling */
+body {
+  font-family: "Poppins", sans-serif; /* Apply Poppins font */
+  background-color: #f4f7f6;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%; /* Allow body to stretch to full height */
+}
+
+/* Header styling */
+.header {
+  background-color: #1d3557;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between; /* Align items to the left and right */
+  align-items: center; /* Center align vertically */
+  height: 5rem;
+}
+
+.header h1 {
+  font-size: 48px; /* Increase the font size */
+  font-weight: bold;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+}
+
+/* Header button styling */
+.header button {
+  padding: 10px 30px;
+  background-color: #1d3557; /* Same background color as the header */
+  color: white;
+  border: 1px solid white; /* White border */
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.header button:hover {
+  background-color: white; /* Invert background to white on hover */
+  color: #1d3557; /* Invert text color to match the header */
+  transition: all 0.5s ease-in;
+  border-color: #1d3557; /* Invert the border color to match the header */
+}
+
+/* Navbar styling */
+.navbar {
+  background-color: #273e5f;
+  display: flex;
+  justify-content: flex-start; /* Align items to the left */
+  padding: 15px;
+  align-items: center;
+  gap: 30px;
+  height: 3.88rem;
+}
+
+.navbar a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar a:hover {
+  border: 1px solid #f4f7f6;
+  border-radius: 0.4rem;
+  transition: all 0.5s ease-in;
+}
+
+/* Dropdown styling */
+.navbar select {
+  background-color: #1d3557;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-left: auto; /* Move to the extreme right */
+}
+
+.navbar select:hover {
+  background-color: #1d3557;
+}
+
+/* Image Placeholder Section */
+.image-placeholder {
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px; /* Add top margin to create space between navbar and image */
+}
+
+/* Stats Section */
+.stats-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  background-color: #f4f7f6;
+}
+.stat-card {
+  background-color: #f4f7f6;
+  width: 200px;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 6, 128, 0.422);
+  text-align: center;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+.stat-card:hover {
+  background-color: rgb(168, 186, 210);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+}
+.stat-card::after {
+  content: "";
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 2px solid #c0dada;
+}
+.stat-card h3 {
+  font-size: 36px;
+  color: #333;
+}
+.stat-card p {
+  font-size: 16px;
+  color: #666;
+}
+
+/* Locate Us button styling */
+.locate-us-btn {
+  position: fixed;
+  bottom: 40px; /* Move the button a bit higher (adjust the value to your preference) */
+  right: 20px; /* Keep it aligned to the right */
+  padding: 12px 25px;
+  background-color: #1d3557;
+  color: white;
+  border: none;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  z-index: 100;
+  margin-bottom: 0.6rem;
+}
+
+.locate-us-btn:hover {
+  background-color: #2b4972;
+  transition: all 0.5s ease-in;
+}
+
+/* Footer styling */
+footer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d3557;
+  color: white;
+  font-size: 12px;
+  padding: 10px 0; /* Adjust padding to prevent excessive space */
+  margin-top: auto; /* Push the footer to the bottom */
+}

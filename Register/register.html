@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="regStyle.css" type="text/css">
+</head>
+<body>
+    <header>
+        <h1 class="main-title">Med Care</h1>
+        <h3 class="sub-title">Patient Online Services</h3>
+    </header>
+
+    <main>
+        <section id="registrationForm">
+           <div class="form-title">
+             <h2>Welcome,</h2>
+            <h3 class="doto-font">Register as new user</h3>
+           </div>
+            <form onsubmit="registerUser(event)">
+                <label for="regName">Name</label>
+                <input type="text" id="regName" required>
+                <label for="regAge" pa>Age</label>
+                <input type="number" id="regAge" required>
+                <label for="regSex">Gender</label>
+                <input type="text" id="regSex" required>
+                <label for="regPhone">Phone Number</label>
+                <input type="text" id="regPhone" required>
+                <label for="regEmail">Email</label>
+                <input type="email" id="regEmail" required>
+                <label for="regPassword">Password</label>
+                <input type="password" id="regPassword" required>
+                <button type="submit">Create Account</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- <footer>
+        <p>&copy; 2024 Med Care. All rights reserved.</p>
+    </footer> -->
+
+    <script type="module" src="firebaseRegister.js" defer></script>
+    <script type="module" src="validation.js" defer></script>
+</body>
+</html>

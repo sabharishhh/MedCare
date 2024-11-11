@@ -1,0 +1,201 @@
+/* General Reset and Font Imports */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts */
+.playfair-font {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+}
+
+.dm-sans-font {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 900;
+}
+
+.poppins {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+}
+
+body {
+  color: #1d3557;
+  background-color: #fff; /* Change background color */
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Header */
+header {
+  height: 12vh;
+  margin-top: 10px;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  animation: slideInDown 0.5s ease-out;
+}
+
+.title {
+  font-size: 1.4rem;
+}
+
+/* Main Content */
+main {
+  height: 60vh;
+  padding-left: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  animation: fadeIn 1s ease-in-out;
+  animation-delay: 0.5s;
+  animation-fill-mode: both;
+}
+
+.main-title {
+  font-size: 1.1rem;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.5rem;
+}
+
+.login-text h1 {
+  font-size: 5rem;
+  line-height: 7rem;
+  transform: scale(1.05);
+  opacity: 0;
+  animation: fadeInUp 0.5s ease forwards;
+}
+
+.login-text p {
+  font-family: "Playfair Display", serif;
+  font-size: 1.27rem;
+  line-height: 1.6rem;
+  opacity: 0;
+  animation: fadeInUp 1s ease forwards;
+  animation-delay: 0.3s;
+}
+
+.buttons {
+  display: flex;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.buttons button {
+  font-size: 1.2rem;
+  padding: 10px 40px;
+  border: 1px solid #0a1128;
+  border-radius: 3rem;
+  cursor: pointer;
+  font-weight: 400; 
+  transition: all 0.3s ease; 
+}
+
+/* Button Specific Styles */
+.login-btn {
+  background-color: #294e86;
+  color: #fffbfe;
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out, border 0.3s ease-in-out, transform 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: #F3F3F3;
+  color: #294e86;
+  border: 1.5px solid #250001;
+  transform: scale(1.05);
+}
+
+.create-acc-btn {
+  background-color: #fffbfe;
+  color: #16374b;
+  border: 1.5px solid #250001;
+  transition: all 0.5s ease-in-out, transform 0.3s ease;
+}
+
+.create-acc-btn:hover {
+  background-color: #fffbfe;
+  color: #294e86;
+  transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+  margin-top: 4rem;
+  height: 22vh;
+  background-color: #294e86;
+  color: #F3F3F3;
+  padding-left: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  bottom: 0;
+  overflow: auto;
+  animation: slideInUp 0.5s ease-out;
+}
+
+.msg {
+  font-size: 1rem;
+  opacity: 0;
+  animation: fadeIn 0.5s ease forwards;
+  animation-delay: 0.5s;
+}
+
+/* Keyframes */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideInDown {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

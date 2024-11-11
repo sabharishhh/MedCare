@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Dashboard</title>
+    <link rel="stylesheet" href="doctorDash.css" type="text/css" />
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  </head>
+  <body>
+    <h1 class="main-title">Dashboard</h1>
+    <h2 id="doctorName">Loading...</h2>
+    
+    <div class="form-title">
+      <h3 class="sub-title">Schedule Working Hours</h3>
+  </div>
+    <form onsubmit="saveWorkingHours(event)">
+      <label for="monday">Monday:</label>
+      <input type="text" id="monday" required /><br />
+      <label for="tuesday">Tuesday:</label>
+      <input type="text" id="tuesday" required /><br />
+      <label for="wednesday">Wednesday:</label>
+      <input type="text" id="wednesday" required /><br />
+      <label for="thursday">Thursday:</label>
+      <input type="text" id="thursday" required /><br />
+      <label for="friday">Friday:</label>
+      <input type="text" id="friday" required /><br />
+      <label for="saturday">Saturday:</label>
+      <input type="text" id="saturday" /><br />
+      <label for="sunday">Sunday:</label>
+      <input type="text" id="sunday" /><br />
+      <button type="submit" class="schedule-save">Save</button>
+    </form>
+
+    <div class="ur-appointments">
+        <h3 class="ur-appointments-title">Your Appointments</h3>
+    </div>
+    <ul id="appointmentsList"></ul>
+
+      <div class="logout">
+        <a href="/Login/login.html"><i class="fa-solid fa-right-from-bracket"></i></a>
+    </div>
+
+    <script type="module" src="doctorDash.js" defer></script>
+  </body>
+</html>

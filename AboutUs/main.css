@@ -1,0 +1,182 @@
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500;700&display=swap");
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f4f7f6;
+  color: #333;
+  line-height: 1.6;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Header */
+header {
+  background-color: #1d3557; /* Teal shade */
+  color: #f4f7f6;
+  max-width: 1200px; /* Restrict width for white space on sides */
+  padding: 5px auto; /* Add padding for additional space */
+  margin: 0 auto; /* Center the header */
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  width: 86%;
+}
+
+
+header h1 {
+  font-size: 3.4rem;
+  min-width: 320px;
+  text-align: center;
+}
+
+/* Container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Sections */
+section {
+  margin-bottom: 40px;
+}
+
+.about-us p,
+.vision p,
+.mission p,
+.dir_msg p,
+.patient_test p {
+  margin-bottom: 20px;
+  font-size: 17px;
+  color: #333;
+}
+
+/* Headings */
+h2 {
+  font-size: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #202124; /* Darker teal shade */
+  margin-bottom: 15px;
+}
+
+h3 {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #1d3557;
+  margin-top: 20px;
+}
+
+/* Vision, Mission */
+.vision,
+.mission {
+  
+  padding: 20px;
+  border: 2px solid #b7bfc3c1;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.vision h2,
+.mission h2 {
+  font-size: 22px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: #202124;
+  margin-bottom: 15px;
+}
+
+/* Values Section */
+.values-header {
+  margin-bottom: 20px;
+  color: #202124;
+  font-size: 22px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.value-box {
+  background-color: #f4f7f6 ;
+  padding: 20px;
+  padding-top: 0px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  border: 1px solid #1d3557;
+  box-shadow: 0 4px 8px rgba(0, 6, 128, 0.422);
+}
+
+.value-box h3 {
+  font-size: 17px;
+  color: #202124;
+  margin-bottom: 10px;
+}
+
+.value-box p {
+  font-size: 17px;
+  color: #333;
+}
+
+hr {
+  border: 0;
+  height: 2px;
+  background-color: #1d3557;
+  margin: 40px 0;
+}
+
+/* Director's Message */
+.dir_msg h3 {
+  font-size: 1.2rem;
+  color: #202124;
+  margin-top: 15px;
+}
+
+/* Patient Testimonials */
+.patient_test h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 30px;
+}
+
+.testimonial-container {
+  background-color: #f4f7f6;
+  border: 1px solid #1d3557;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 6, 128, 0.422);
+}
+
+.testimonial-container h3 {
+  color: #202124          ;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.testimonial-container p {
+  font-style: italic;
+  color: #333;
+  font-size: 17px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1d3557;
+  color: white;
+  font-size: 12px;
+  height: 24px;
+}

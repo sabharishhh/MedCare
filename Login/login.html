@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="loginStyle.css" type="text/css">
+</head>
+<body>
+
+    <main>
+        <div class="left">
+            <h1 class="main-title">Med Care</h1>
+            <section id="loginForm">
+            <h2 class="subheading">Welcome,</h2>
+            <h2 class="subtitle">User Login Portal</h2>
+            <form onsubmit="loginUser(event)">
+                <label for="loginEmail">Email:</label>
+                <input type="email" id="loginEmail" required>
+                <label for="loginPassword">Password:</label>
+                <input type="password" id="loginPassword" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        </div>
+
+        <div class="right">
+                <a href="/homePage.js" ><div class="text">
+                <h1 class="text-title">Med Care</h1>
+                <p class="text-para">Treating the cause, not the symptoms</p>
+            </div></a>
+            <img src="/Resources/image1.jpg" alt="cover image">
+        </div>
+
+
+    <script type="module" src="firebaseLogin.js" defer></script>
+</body>
+</html>
